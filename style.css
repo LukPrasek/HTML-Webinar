@@ -28,3 +28,13 @@ main {
     background: white;
     padding: 10px;
 }
+main section p a{
+    color: red;
+} 
+.green {
+    color: green;
+}
+.see-more{
+    color: red;
+    font-weight: bold;
+}
