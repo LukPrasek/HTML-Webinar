@@ -16,11 +16,17 @@ header h1 {
 header nav {
     text-align: center;
     background: #2a86a5;
-    padding: 5px;
 }
 
 header nav a {
+    background: #128fb9;
     color: #000;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+header nav a:hover {
+    background: #fff;
 }
 
 main {
@@ -51,19 +57,46 @@ main section div p {
     color: red;
     font-weight: bold;
 }
+
 .counter {
     display: inline-block;
     position: relative;
-  
 }
+
 .counter span {
-    border-radius: 50%;
     position: absolute;
+    border-radius: 50%;
     left: 100%;
     padding: 2px;
     font-size: 10px;
     top: 0;
     background: red;
     margin-top: -10px;
-    margin-left:-10px;
+    margin-left: -10px;
+}
+
+@media only screen and (max-width: 640px) {
+    header nav a {
+        display: block !important;
+        margin-right: 0 !important;
+    }
+
+    main section div img,
+    main section div p {
+        width: 100% !important;
+        display: block !important;
+    }
+
+    main section div {
+        padding: 5px;
+    }
+
+    main section div p {
+        margin-right: 0;
+    }
+
+    main section div img {
+        max-width: none !important;
+    }
+
 }

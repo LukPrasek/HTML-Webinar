@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .box {
+            background: green;
+        }
+        @media only screen and (min-width: 641px) and (max-width: 1024px) {
+            .box {
+                background: orange;
+            }
+        }
+        @media only screen and (min-wdith: 321px) and (max-width: 640px) {
+            .box {
+                background: red;
+            }
+        }
+        @media only screen and (max-width: 320px) {
+            .box {
+                background: blue;
+            }
+        }
+        .wrapper .collumn {
+            width: 50%;
+            float: left;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .wrapper .green {
+            background: green;
+        }
+        .wrapper .orange {
+            background: orange;
+        }
+        @media only screen and (max-width: 640px) {
+            .wrapper .collumn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <div class="box"> Hello box! </div> -->
+
+    <div class="wrapper">
+        <div class="collumn green">1</div>
+        <div class="collumn orange">2</div>
+    </div>
+
+
+</body>
+</html>
